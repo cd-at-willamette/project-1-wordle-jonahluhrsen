@@ -16,7 +16,6 @@ def wordle():
     def enter_action():
         # What should happen when RETURN/ENTER is pressed.
         row_number = gw.get_current_row()
-        print(row_number, N_ROWS)
         
         guessed_word = ""
         for i in range(N_COLS):
@@ -104,7 +103,6 @@ def wordle():
             return
           
     actual_word = random_five_letter_word()
-    print(actual_word)
 
     gw = WordleGWindow()
     gw.add_enter_listener(enter_action)
